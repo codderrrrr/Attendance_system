@@ -1,0 +1,43 @@
+# Ignore dataset and attendance folders
+dataset/
+attendance/
+
+# Ignore virtual environment folder
+venv/
+.venv/
+
+# Ignore system files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore IDE & editor-specific files
+.vscode/
+*.swp
+*.swo
+*.idea/
+*.iml
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore compiled Python files
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore large files and temp files
+*.bak
+*.tmp
+*.old
+*.out
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore environment configuration files
+.env
+.DS_Store
+Thumbs.db
