@@ -95,6 +95,9 @@ elif  st.session_state.page=="log in":
                 today_time = f"{current_date.day}/{current_date.month}/{current_date.year}"
                 user_attendance_file = os.path.join(attendance_path, f"{output}.txt")
 
+                if not os.path.exists(user_attendance_file):
+                    open(user_attendance_file, 'w').close()
+                    
                 with open(user_attendance_file, 'r') as f:
                     attendance_record = f.readlines()
                     if any(today_time in record for record in attendance_record):
